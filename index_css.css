@@ -95,8 +95,6 @@ figcaption{
     text-align: center;
     background-color: #F6F6F6;
     padding: 3%;
-    width: 111%;
-    margin-left: -10%;
 }
 
 .skills{
@@ -122,8 +120,6 @@ figcaption{
     text-align: center;
     padding: 3%;
     background-color: #F6F6F6;
-    width: 111%;
-    margin-left: -10%;
 }
 
 .img_wr{
@@ -173,7 +169,7 @@ figcaption{
     border: none;
     font-size: 30px;
     background-color: #F6F6F6;
-    width: 95%;
+    width: 98%;
     margin-left: -13%;
     padding-left: 5%;
 }
@@ -196,12 +192,20 @@ figcaption{
         font-size: 14px;
     }
 
+    .about{
+        width: 111%;
+        margin-left: -10%;
+    }
     .img_wr{
         font-size: 16px;
     }
     
     .port_img{
         width: 80%;
+    }
+    .portfolio{
+        width: 111%;
+        margin-left: -10%;
     }
 
     p{

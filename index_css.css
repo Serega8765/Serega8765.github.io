@@ -95,6 +95,8 @@ figcaption{
     text-align: center;
     background-color: #F6F6F6;
     padding: 3%;
+    width: 111%;
+    margin-left: -10%;
 }
 
 .skills{
@@ -120,6 +122,8 @@ figcaption{
     text-align: center;
     padding: 3%;
     background-color: #F6F6F6;
+    width: 111%;
+    margin-left: -10%;
 }
 
 .img_wr{
@@ -166,10 +170,12 @@ figcaption{
 .header .show_menu{
     display: inline;
     position: absolute;
-    border:none;
+    border: none;
     font-size: 30px;
     background-color: #F6F6F6;
-    width: 85%;
+    width: 95%;
+    margin-left: -13%;
+    padding-left: 5%;
 }
 
 .show_menu .menu_li{

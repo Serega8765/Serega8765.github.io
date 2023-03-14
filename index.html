@@ -4,182 +4,130 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/style.css">
-    <title>ФОК Арена</title>
+    <title>Музей</title>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="style.css">
+    <script src="./assets/js/jquery-3.6.1.js"></script>
+    <script src="./assets/js/header.js"></script>
 </head>
 <body>
-    <!--header-->
     <header class="header">
-        <div class="logo">
-            <p>ФОК Арена</p>
-        </div>
+        <section class="header-section">
+            <a class="header-logo" href="" ></a>
+            <div class="header-information">
+                <button class="btn--eyeless">
+                    <img src="./assets/img/eye.svg" alt="">
+                </button>
+                <p>+7 831 625-61-41</p>
+                <a class="header-social header-social--vk" href="#"></a>
+                <a class="header-social header-social--yt" href="#"></a>
+                <a class="header-social header-social--ok" href="#"></a>
+            </div>
+            <div class="eyeless-content">Версия для слабовидящих</div>
+        </section>
 
-
-         <ul class="menu menu-header">  
-            <li><a href="../html/news.html"> Контакты </a></li>
-            <li><a href="#"> Администрация </a></li>
-            <li><a href="#"> Тренерский состав </a></li>
-         </ul>
+        <nav class="nav--main">
+            <ul>
+                <li class="nav-li--main">
+                    <div class="nav-a--main" href="#">
+                        <span class="nav-span--main">
+                            Музеи
+                            <div class="nav-div--void"></div>
+                        </span>
+                        <img src="./assets/img/arrow.svg" alt="" class="li-arrow">
+                    </div>
+                    <ul class="nav-ul--dropdown">
+                        <div class="dropdown-separator dropdown-separator--first">
+                            <li><a href="#">Режим работы</a></li>
+                            <li><a href="#">Историко-художественный музей</a></li>
+                            <li><a href="#">Музейно-туристический центр</a></li>
+                            <li><a href="#">Дом Семена-Ложкарь</a></li>
+                            <li><a href="#">Музей ремёсел</a></li>
+                        </div>
+                        <div class="dropdown-separator">
+                            <li><a href="#">Виртуальная ветрина</a></li>
+                            <li><a href="#">Экспонат месяца</a></li>
+                            <li><a href="#">Цены</a></li>
+                            <li><a href="#">Льготы</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav-li--main"><a class="nav-a--main" href="#">
+                        <span class="nav-span--main">
+                            Пушкинская карта
+                            <div class="nav-div--void"></div>
+                        </span>
+                </a></li>
+                <li class="nav-li--main">
+                    <div class="nav-a--main" href="#">
+                        <span class="nav-span--main">
+                            ТИЦ
+                            <div class="nav-div--void"></div>
+                        </span>
+                        <img src="./assets/img/arrow.svg" alt="" class="li-arrow">
+                    </div>
+                    <ul class="nav-ul--dropdown">
+                        <div class="dropdown-separator dropdown-separator--first">
+                            <li><a href="#">Туристические маршруты</a></li>
+                            <li><a href="#">Интерактивные программы</a></li>
+                            <li><a href="#">Мастер классы</a></li>
+                            <li><a href="#">Кафе и рестораны</a></li>
+                            <li><a href="#">Музей матрёшки</a></li>
+                        </div>
+                        <div class="dropdown-separator">
+                            <li><a href="#">ТЦ «Хохлома»</a></li>
+                            <li><a href="#">Событийные мероприятия</a></li>
+                            <li><a href="#">Событийный календарь</a></li>
+                            <li><a href="#">Памятники</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav-li--main">
+                    <div class="nav-a--main" href="#">
+                        <span class="nav-span--main">
+                            Галерея
+                            <div class="nav-div--void"></div>
+                        </span>
+                        <img src="./assets/img/arrow.svg" alt="" class="li-arrow">
+                    </div>
+                    <ul class="nav-ul--dropdown">
+                        <div class="dropdown-separator dropdown-separator--first">
+                            <li><a href="#">Фото</a></li>
+                            <li><a href="#">Видео</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav-li--main">
+                    <div class="nav-a--main" href="#">
+                        <span class="nav-span--main">
+                            Новости
+                            <div class="nav-div--void"></div>
+                        </span>
+                        <img src="./assets/img/arrow.svg" alt="" class="li-arrow">
+                    </div>
+                    <ul class="nav-ul--dropdown">
+                        <div class="dropdown-separator dropdown-separator--first">
+                            <li><a href="#">Актуальные новости</a></li>
+                            <li><a href="#">Архив 2022</a></li>
+                            <li><a href="#">Архив 2021</a></li>
+                            <li><a href="#">Архив 2020</a></li>
+                        </div>
+                    </ul>
+                </li>
+                <li class="nav-li--main"><a class="nav-a--main" href="#">
+                    <span class="nav-span--main">
+                        Контакты
+                        <div class="nav-div--void"></div>
+                    </span>
+                </a></li>
+            </ul>
+        </nav>
     </header>
-    <!--/header-->
+    <main>
 
-    <!--main-->
-    <main class="main">
-        <ul class="menu menu-main">
-            <li><a href="#">Главная</a></li>
-            <li><a href="#">Новости</a></li>
-            <li><a href="#">Секции</a></li>
-            <li><a href="#">ГТО</a></li>
-        </ul>
-        <div class="wrapper">
-            <article class="article article-main--small">
-                Тут будет информация
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--large">
-                <img class="article-img" src="../images/fok.jpg" alt="FOK">
-                <div class="aticle-content">
-                    Тут будет информация
-                    Тут будет информация
-                    Тут будет информация
-                    Тут будет информация
-                    Тут будет информация
-                    Тут будет информация
-                    Тут будет информация
-                    Тут будет информация
-                    Тут будет информация
-                </div>
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--small">
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--small">
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--medium">
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--small">
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--small">
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--large">
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--small">
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--small">
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--medium">
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--small">
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--small">
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--large">
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--small">
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--small">
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--medium">
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            <article class="article article-main--small">
-                Тут будет информация
-                <a class="btn" href="#" type="button">
-                    Подробнее
-                </a>
-            </article>
-            
-        </div>
     </main>
-    <!--/main-->
+    <footer>
+
+    </footer>
 </body>
 </html>

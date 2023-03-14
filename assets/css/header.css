@@ -1,0 +1,166 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: #F7F7F7;
+}
+
+*{
+    text-decoration: none;
+    color: #1E1A1A;
+    font: 400 20px Jost;
+}
+
+li{
+    list-style: none;
+}
+
+
+/*Yellow*/
+.header{
+    background-color: #fff;
+    box-shadow: 0px 4px 50px -6px 
+                rgba(54, 95, 179, 0.1);
+    z-index: 1;
+    position: sticky;
+    top: 0;
+}
+
+.header-section{
+    background-color: #FFD15C;
+    padding: .4em 18.5em .5em 16em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-information{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: #FFD15C;
+    z-index: 2;
+}
+
+.header-logo{
+    background-image: url(../img/logo.svg);
+    width: 8em;
+    height: 3em;
+    display: block;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.btn--eyeless{
+    border: none;
+    margin-right: 1em;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: #FFD15C;
+}
+
+.eyeless-content{
+    position: absolute;
+    right: 20.5em;
+    top: 1em;
+    transition: all 1s;
+    cursor: pointer;
+    padding-right: 1em;
+}
+
+.active-eyeless-content{
+    transform: translateX(calc(-13em));
+}
+
+.header-social{
+    display: block;
+    width: 1.2em;
+    height: 1.2em;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0 .25em;
+}
+
+.header-social--vk{
+    background-image: url(../img/vkLogo.svg);
+    margin-left: 1em;
+}
+
+.header-social--yt{
+    background-image: url(../img/ytLogo.svg);
+
+}
+
+.header-social--ok{
+    background-image: url(../img/okLogo.svg);
+
+}
+
+
+
+
+
+/*Yellow END*/
+
+
+/*White*/
+.nav--main > ul{
+    display: flex;
+    justify-content: space-between;
+    padding: 1.3em 18.5em 1.3em 16em;
+    position: relative;
+}
+
+.nav-a--main{
+    display: flex;
+    cursor: pointer;
+    flex-wrap: nowrap;
+}
+
+.nav-span--main{
+    margin-right: .3em;
+    position: relative;
+}
+
+.nav-div--void::before{
+    content: "";
+    width: 100%;
+    position: absolute;
+    border-bottom: 2px solid #F35B5B;
+    transform: scaleX(0);
+    transition: all .5s;
+}
+
+.nav-span--main:hover .nav-div--void::before{
+    transform: scaleX(1);
+}
+
+.nav-ul--dropdown{
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    left: 0;
+    background-color: #FFFFFF;
+    border-top: 2px solid #F35B5B;
+    margin-top: .3em;
+    width: 100%;
+}
+
+.dropdown-separator{
+    display: flex;
+    flex-direction: column;
+    padding: 1em 0 .5em 13em;
+}
+
+.dropdown-separator--first{
+    padding-left: 16em;
+}
+
+.dropdown-separator > li{
+    margin-bottom: 1em;
+} 
+/*White END*/

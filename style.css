@@ -1,0 +1,24 @@
+/* Обычный */
+@font-face {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Jost'),
+		url('./assets/fonts/Jost.woff2') format('woff2'), 
+		url('./assets/fonts/Jost.woff') format('woff'),
+		url('./assets/fonts/Jost.ttf') format('ttf'),
+		url('./assets/fonts/Jost.eot') format('eot');
+}
+
+/* Жирный */
+@font-face {
+	font-family: 'Jost';
+	font-style: normal;
+	font-weight: bold;
+	src: local('Jost'),
+		url('./assets/fonts/Jost.woff2') format('woff2'), 
+		url('./assets/fonts/Jost.woff') format('woff'),
+		url('./assets/fonts/Jost.ttf') format('ttf'),
+		url('./assets/fonts/Jost.eot') format('eot');
+}
+

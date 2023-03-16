@@ -21,7 +21,7 @@ $(document).ready(function () {
             isOpen = true;
             $(this).children('ul').show(300);
             $(this).addClass('selected');
-        } else if(!($(this).hasClass('selected'))){
+        } else{
             isOpen = false;
             liMain.children('ul').hide(300);
             liMain.removeClass('selected');

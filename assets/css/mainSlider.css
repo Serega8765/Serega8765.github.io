@@ -1,0 +1,38 @@
+.h1{
+    font-size: 48px;
+    font-weight: 500;
+    font-family: 'Roboto Slab';
+}
+
+#slide-1{
+    background-image: url(../img/slider/IMGgoldHohloma.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.slide{
+    display: flex;
+    flex-direction: column;
+    padding: 20em 0 3.5em 18.5em;
+}
+
+.slider-h1{
+    color: #fff;
+}
+
+.slide-btn{
+    background-color: #FFD15C;
+    font: 600 20px 'Jost';
+    letter-spacing: .1em;
+    text-transform: uppercase;
+    width: max-content;
+    padding: .7em 2em;
+    margin-top: 2em;
+    transition: all .5s;
+}
+
+.slide-btn:hover{
+    background-color: #F35B5B;
+    color: #fff;
+}

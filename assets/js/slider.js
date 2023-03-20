@@ -19,11 +19,21 @@ $(document).ready(function () {
         ],
         index = 0;
 
+    function preload(imgUrl){
+        $(imgUrl).each(function() {
+            $('<img />').attr('src', this).appendTo('body').css('display', 'none');
+        })
+    }
+    preload(imgUrl);
+
     function changeSlide(index){
         slide.css('background-image', 'url(' + imgUrl[index] + ')');
-        hSlide.html(imgText[index]);
-        numSlide.text((index + 1) + ' / ' + imgText.length);
-        return
+        numSlide.fadeOut(function() {
+            $(this).text((index + 1) + ' / ' + imgText.length)
+        }).fadeIn();
+        hSlide.slideUp(1);
+        hSlide.html(imgText[index]).slideDown(1000);
+        return ;
     }
         
     slideRight.click(function (e) {
@@ -33,8 +43,6 @@ $(document).ready(function () {
             index = 0;
         }
         changeSlide(index);
-
-        console.log(index);
     });
 
     slideLeft.click(function (e) {
@@ -44,7 +52,6 @@ $(document).ready(function () {
             index = 3;
         }
         changeSlide(index);
-        console.log(index);
     });
 
 });

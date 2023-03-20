@@ -16,6 +16,7 @@
     flex-direction: column;
     padding: 20em 0 3.5em 18.5em;
     position: relative;
+    transition: all 1s;
 }
 
 .slider-arrows{
@@ -39,6 +40,11 @@
     color: #F35B5B;
 }
 
+
+.wrapper-h1{
+    min-height: 130px;
+
+}
 
 .slider-h1{
     color: #fff !important;

@@ -4,21 +4,44 @@
     font-family: 'Roboto Slab';
 }
 
-#slide-1{
-    background-image: url(../img/slider/IMGgoldHohloma.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+#slide{
+   background-image: url(../img/slider/IMGgoldHohloma.svg);
 }
 
 .slide{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
     display: flex;
     flex-direction: column;
     padding: 20em 0 3.5em 18.5em;
+    position: relative;
 }
 
-.slider-h1{
+.slider-arrows{
+    position: absolute;
+    top: 1em;
+    left: calc(50% - 3em);
+}
+
+.slide-arrow, .slide-numSlide{
     color: #fff;
+}
+
+.slide-arrow{
+    font-size: 30px;
+    font-weight: 700;
+    transition: all .5s;
+    cursor: pointer;
+}
+
+.slide-arrow:hover{
+    color: #F35B5B;
+}
+
+
+.slider-h1{
+    color: #fff !important;
 }
 
 .slide-btn{

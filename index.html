@@ -1,151 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Музей</title>
 
-    <link rel="icon" href="./assets/img/eye.svg">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="assets/css/header.css">
-    <link rel="stylesheet" href="assets/css/mainSlider.css">
+    <link rel="icon" href="./assets/img/eye.svg" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="assets/css/header.css" />
+    <link rel="stylesheet" href="assets/css/mainSlider.css" />
+    <link rel="stylesheet" href="assets/css/mainContent.css" />
 
     <script src="./assets/js/jquery-3.6.1.js"></script>
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/slider.js"></script>
-</head>
-<body>
+  </head>
+  <body>
     <header class="header">
-        <section class="header-section">
-            <a class="header-logo" href="" ></a>
-            <div class="header-information">
-                <button class="btn--eyeless">
-                    <img src="./assets/img/eye.svg" alt="">
-                </button>
-                <p>+7 831 625-61-41</p>
-                <a class="header-social header-social--vk" href="#"></a>
-                <a class="header-social header-social--yt" href="#"></a>
-                <a class="header-social header-social--ok" href="#"></a>
-            </div>
-            <div class="eyeless-content">Версия для слабовидящих</div>
-        </section>
+      <section class="header-section">
+        <a class="header-logo" href=""></a>
+        <div class="header-information">
+          <button class="btn--eyeless">
+            <img src="./assets/img/eye.svg" alt="" />
+          </button>
+          <p>+7 831 625-61-41</p>
+          <a class="header-social header-social--vk" href="#"></a>
+          <a class="header-social header-social--yt" href="#"></a>
+          <a class="header-social header-social--ok" href="#"></a>
+        </div>
+        <div class="eyeless-content">Версия для слабовидящих</div>
+      </section>
 
-        <nav class="nav--main">
-            <ul>
-                <li class="nav-li--main">
-                    <div class="nav-a--main" href="#">
-                        <span class="nav-span--main">
-                            Музеи
-                            <div class="nav-div--void"></div>
-                        </span>
-                        <img src="./assets/img/arrow.svg" alt="" class="li-arrow">
-                    </div>
-                    <ul class="nav-ul--dropdown">
-                        <div class="dropdown-separator dropdown-separator--first">
-                            <li><a href="#">Режим работы</a></li>
-                            <li><a href="#">Историко-художественный музей</a></li>
-                            <li><a href="#">Музейно-туристический центр</a></li>
-                            <li><a href="#">Дом Семена-Ложкарь</a></li>
-                            <li><a href="#">Музей ремёсел</a></li>
-                        </div>
-                        <div class="dropdown-separator">
-                            <li><a href="#">Виртуальная ветрина</a></li>
-                            <li><a href="#">Экспонат месяца</a></li>
-                            <li><a href="#">Цены</a></li>
-                            <li><a href="#">Льготы</a></li>
-                        </div>
-                    </ul>
-                </li>
-                <li class="nav-li--main"><a class="nav-a--main" href="#">
-                        <span class="nav-span--main">
-                            Пушкинская карта
-                            <div class="nav-div--void"></div>
-                        </span>
-                </a></li>
-                <li class="nav-li--main">
-                    <div class="nav-a--main" href="#">
-                        <span class="nav-span--main">
-                            ТИЦ
-                            <div class="nav-div--void"></div>
-                        </span>
-                        <img src="./assets/img/arrow.svg" alt="" class="li-arrow">
-                    </div>
-                    <ul class="nav-ul--dropdown">
-                        <div class="dropdown-separator dropdown-separator--first">
-                            <li><a href="#">Туристические маршруты</a></li>
-                            <li><a href="#">Интерактивные программы</a></li>
-                            <li><a href="#">Мастер классы</a></li>
-                            <li><a href="#">Кафе и рестораны</a></li>
-                            <li><a href="#">Музей матрёшки</a></li>
-                        </div>
-                        <div class="dropdown-separator">
-                            <li><a href="#">ТЦ «Хохлома»</a></li>
-                            <li><a href="#">Событийные мероприятия</a></li>
-                            <li><a href="#">Событийный календарь</a></li>
-                            <li><a href="#">Памятники</a></li>
-                        </div>
-                    </ul>
-                </li>
-                <li class="nav-li--main">
-                    <div class="nav-a--main" href="#">
-                        <span class="nav-span--main">
-                            Галерея
-                            <div class="nav-div--void"></div>
-                        </span>
-                        <img src="./assets/img/arrow.svg" alt="" class="li-arrow">
-                    </div>
-                    <ul class="nav-ul--dropdown">
-                        <div class="dropdown-separator dropdown-separator--first">
-                            <li><a href="#">Фото</a></li>
-                            <li><a href="#">Видео</a></li>
-                        </div>
-                    </ul>
-                </li>
-                <li class="nav-li--main">
-                    <div class="nav-a--main" href="#">
-                        <span class="nav-span--main">
-                            Новости
-                            <div class="nav-div--void"></div>
-                        </span>
-                        <img src="./assets/img/arrow.svg" alt="" class="li-arrow">
-                    </div>
-                    <ul class="nav-ul--dropdown">
-                        <div class="dropdown-separator dropdown-separator--first">
-                            <li><a href="#">Актуальные новости</a></li>
-                            <li><a href="#">Архив 2022</a></li>
-                            <li><a href="#">Архив 2021</a></li>
-                            <li><a href="#">Архив 2020</a></li>
-                        </div>
-                    </ul>
-                </li>
-                <li class="nav-li--main"><a class="nav-a--main" href="#">
-                    <span class="nav-span--main">
-                        Контакты
-                        <div class="nav-div--void"></div>
-                    </span>
-                </a></li>
+      <nav class="nav--main">
+        <ul>
+          <li class="nav-li--main">
+            <div class="nav-a--main" href="#">
+              <span class="nav-span--main">
+                Музеи
+                <div class="nav-div--void"></div>
+              </span>
+              <img src="./assets/img/arrow.svg" alt="" class="li-arrow" />
+            </div>
+            <ul class="nav-ul--dropdown">
+              <div class="dropdown-separator">
+                <li><a href="#">Режим работы</a></li>
+                <li><a href="#">Историко-художественный музей</a></li>
+                <li><a href="#">Музейно-туристический центр</a></li>
+                <li><a href="#">Дом Семена-Ложкарь</a></li>
+                <li><a href="#">Музей ремёсел</a></li>
+              </div>
+              <div class="dropdown-separator">
+                <li><a href="#">Виртуальная ветрина</a></li>
+                <li><a href="#">Экспонат месяца</a></li>
+                <li><a href="#">Цены</a></li>
+                <li><a href="#">Льготы</a></li>
+              </div>
+              <img class="dropdown-img" src="./assets/img/dropDown/dropDownMuseum.svg" alt="">
             </ul>
-        </nav>
-    </header>
-    <main>
-        <section class="main-slider">
-            <div class="slide" id="slide">
-                <div class="slider-arrows">
-                    <span class="slide-arrow" id="slideLeft">←</span>
-                    <span class="slide-numSlide"> 1 / 4 </span>
-                    <span class="slide-arrow" id="slideRight">→</span>
-                </div>
-                <div class="wrapper-h1">
-                    <h1 class="h1 slider-h1">Музейно-туристический <br> центр «Золотая Хохлома»</h1>
-                </div>
-                <a href="#" class="slide-btn">Виртуальный тур</a>
-                <a href="#" class="slide-btn">Подробнее</a>
+          </li>
+          <li class="nav-li--main">
+            <a class="nav-a--main" href="#">
+              <span class="nav-span--main">
+                Пушкинская карта
+                <div class="nav-div--void"></div>
+              </span>
+            </a>
+          </li>
+          <li class="nav-li--main">
+            <div class="nav-a--main" href="#">
+              <span class="nav-span--main">
+                ТИЦ
+                <div class="nav-div--void"></div>
+              </span>
+              <img src="./assets/img/arrow.svg" alt="" class="li-arrow" />
             </div>
-        </section>
-    </main>
-    <footer>
+            <ul class="nav-ul--dropdown">
+              <div class="dropdown-separator">
+                <li><a href="#">Туристические маршруты</a></li>
+                <li><a href="#">Интерактивные программы</a></li>
+                <li><a href="#">Мастер классы</a></li>
+                <li><a href="#">Кафе и рестораны</a></li>
+                <li><a href="#">Музей матрёшки</a></li>
+              </div>
+              <div class="dropdown-separator">
+                <li><a href="#">ТЦ «Хохлома»</a></li>
+                <li><a href="#">Событийные мероприятия</a></li>
+                <li><a href="#">Событийный календарь</a></li>
+                <li><a href="#">Памятники</a></li>
+              </div>
+              <img class="dropdown-img" src="./assets/img/dropDown/dropDownTIC.svg" alt="">
+            </ul>
+          </li>
+          <li class="nav-li--main">
+            <div class="nav-a--main" href="#">
+              <span class="nav-span--main">
+                Галерея
+                <div class="nav-div--void"></div>
+              </span>
+              <img src="./assets/img/arrow.svg" alt="" class="li-arrow" />
+            </div>
+            <ul class="nav-ul--dropdown">
+              <div class="dropdown-separator">
+                <li><a href="#">Фото</a></li>
+                <li><a href="#">Видео</a></li>
+              </div>
+              <img class="dropdown-img--center" src="./assets/img/dropDown/dropDownGallary.svg" alt="">
+            </ul>
+          </li>
+          <li class="nav-li--main">
+            <div class="nav-a--main" href="#">
+              <span class="nav-span--main">
+                Новости
+                <div class="nav-div--void"></div>
+              </span>
+              <img src="./assets/img/arrow.svg" alt="" class="li-arrow" />
+            </div>
+            <ul class="nav-ul--dropdown">
+              <div class="dropdown-separator">
+                <li><a href="#">Актуальные новости</a></li>
+                <li><a href="#">Архив 2022</a></li>
+                <li><a href="#">Архив 2021</a></li>
+                <li><a href="#">Архив 2020</a></li>
+              </div>
+              <img class="dropdown-img--center" src="./assets/img/dropDown/dropDownNews.svg" alt="">
+            </ul>
+          </li>
+          <li class="nav-li--main">
+            <a class="nav-a--main" href="#">
+              <span class="nav-span--main">
+                Контакты
+                <div class="nav-div--void"></div>
+              </span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-    </footer>
-</body>
+    <main>
+      <section class="main-slider">
+        <div class="slide" id="slide">
+            <div class="slide-btn" id="btn-left">←</div>
+            <div class="slide-btn" id="btn-right">→</div>
+          <div class="slider-arrows">
+            <span class="slide-arrow" id="slideLeft">←</span>
+            <span class="slide-numSlide"> 1 / 4 </span>
+            <span class="slide-arrow" id="slideRight">→</span>
+          </div>
+          <div class="wrapper-h1">
+            <h1 class="h1 slider-h1">
+              Музейно-туристический <br/>
+              центр «Золотая Хохлома»
+            </h1>
+          </div>
+          <a href="#" class="btn--yellow">Виртуальный тур</a>
+          <a href="#" class="btn--yellow">Подробнее</a>
+        </div>
+      </section>
+      <!-- Slider end -->
+
+      <section class="main-content_card">
+        <div class="content_card-h1--gold">
+            <img src="./assets/img/content/redBerry.svg" alt="" />
+            <img class="content_card-redBerry--big" src="./assets/img/content/redBerry.svg" alt="" />
+            <h2 class="h2 content_card-h2">Пушкинская карта</h2>
+            <img class="content_card-redBerry--big content_card-redBerry--left" src="./assets/img/content/redBerry.svg" alt="" />
+            <img  class="content_card-redBerry--left" src="./assets/img/content/redBerry.svg" alt="" />
+        </div>
+        <div class="content-wrap_info">
+            <div class="content_card-img">
+                <img class="content_card-card_img" src="./assets/img/content/pushkinCard.svg" alt="">
+                <img class="content_card-card_img" src="./assets/img/content/pushkinCard.svg" alt="">
+                <img class="content_card-card_img" src="./assets/img/content/pushkinCard.svg" alt="">
+                <img class="content_card-card_img" src="./assets/img/content/pushkinCard.svg" alt="">
+            </div>
+            <div class="content_card-info_card">
+                <p class="info_card-p--head">Как принять участие в программе?</p>
+                <ol class="content_card-ol">
+                    <li>Зарегистрироваться на портале «Госуслуги».</li>
+                    <li>Подтвердить учётную запись.</li>
+                    <li>Установить мобильное приложение 
+                        «Госуслуги.Культура».</li>
+                    <li>Получить Пушкинскую карту — виртуальную или пластиковую карту платёжной системы «Мир».</li>
+                    <li>Выбрать мероприятие из афиши в приложении.</li>
+                    <li>Купить билет в приложении, на сайте или в кассе музея.</li>
+                </ol>
+                <a class="btn--yellow info_card-btn" href="#">Купить билеты</a>
+                <div class="content_card-wrap_stores">
+                    <a class="btn-store btn-store--apple" href="#">
+                    <img src="./assets/img/content/appStore.svg" alt="">
+                </a>
+                <a class="btn-store btn-store--google" href="#">
+                    <img src="./assets/img/content/googlePlay.svg" alt="">
+                </a>
+                </div>
+            </div>
+        </div>
+      </section>
+      <!-- Content card end -->
+    </main>
+    <footer></footer>
+  </body>
 </html>

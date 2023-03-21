@@ -1,6 +1,8 @@
 $(document).ready(function () {
     var slideLeft = $('#slideLeft'),
+        btnLeft = $('#btn-left'),
         slideRight = $('#slideRight'),
+        btnRight = $('#btn-right'),
         hSlide = $('.slider-h1'),
         numSlide = $('.slide-numSlide'),
         slide = $('.slide');
@@ -36,7 +38,7 @@ $(document).ready(function () {
         return ;
     }
         
-    slideRight.click(function (e) {
+    slideRight.add(btnRight).click(function (e) {
         if(index < imgText.length - 1){
             index++;
         }else{
@@ -45,7 +47,7 @@ $(document).ready(function () {
         changeSlide(index);
     });
 
-    slideLeft.click(function (e) {
+    slideLeft.add(btnLeft).click(function (e) {
         if(index > 0){
             index--;
         }else{

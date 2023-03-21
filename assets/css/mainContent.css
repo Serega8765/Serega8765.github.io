@@ -1,0 +1,126 @@
+.h2{
+  font: 500 36px 'Roboto Slab';
+}
+
+.main-content_card{
+  margin-top: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.content_card-h2{
+  color: #fff;
+  line-height: 50px;
+}
+
+.content_card-h1--gold{
+  display: flex;
+  justify-content: center;  
+  background-color: #FFD15C;
+  padding: 1.7em 0;
+  width: 100%;
+  background: linear-gradient(
+    to right,
+    #F7F7F7 16%,
+    #FFD15C 16%
+  );
+}
+
+.content_card-h1--gold > img:nth-child(1), .content_card-h1--gold > img:last-child{
+  margin-bottom: 1em;
+}
+
+
+.content_card-redBerry--big{
+  width: 48px;
+  margin: 0 1em;
+}
+
+.content_card-redBerry--left{
+  transform: scaleX(-1);
+}
+
+.content-wrap_info{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+
+.content_card-img{
+  position: relative;
+  min-width: 580px;
+  max-width: 580px;
+}
+
+.content_card-card_img{
+  position: absolute;
+  border-radius: 1em;
+  bottom: .4em;
+  right: 5em;
+}
+
+.content_card-card_img:nth-child(3){
+  transform: rotateZ(-15deg);
+  bottom: 3.7em;
+  right: 3.5em;
+}
+
+.content_card-card_img:nth-child(2){
+  transform: rotateZ(-30deg);
+  bottom: 7.5em;
+  right: 3.5em;
+}
+
+.content_card-card_img:nth-child(1){
+  transform: rotateZ(-75deg);
+  bottom: 7em;
+  right: 3.5em;
+}
+
+
+
+
+
+.content_card-info_card{
+  min-width: 580px;
+  max-width: 580px;
+}
+
+.info_card-p--head{
+  font-weight: 700;
+  font-size: 24px;
+  margin: 2.5rem 0 1rem 0;
+}
+
+.content_card-ol > li{
+  list-style: decimal inside;
+  margin-bottom: .5em;
+}
+
+.content_card-ol{
+  margin-bottom: 3em;
+}
+
+.info_card-btn{
+  width: auto;
+  margin-bottom: 1em;
+  display: block;
+  text-align: center;
+}
+
+.btn-store{
+  display: block;
+  width: min-content;
+}
+
+.btn-store--apple{
+  margin-right: 1em;
+}
+
+.content_card-wrap_stores{
+  display: flex;
+  margin-top: 1em;
+  justify-content: space-between;
+}

@@ -30,7 +30,7 @@ li{
 
 .header-section{
     background-color: #FFD15C;
-    padding: .4em 18.5em .5em 18.5em;
+    padding: .4em 18% .5em 18%;
     display: flex;
     justify-content: space-between;
 }
@@ -64,11 +64,11 @@ li{
 
 .eyeless-content{
     position: absolute;
-    right: 20.5em;
+    right: 19%;
     top: 1em;
     transition: all 1s;
     cursor: pointer;
-    padding-right: 1em;
+    padding-right: 2em;
 }
 
 .active-eyeless-content{
@@ -111,7 +111,7 @@ li{
 .nav--main > ul{
     display: flex;
     justify-content: space-between;
-    padding: 1.3em 18.5em 1.3em 18.5em;
+    padding: 1.3em 18% 1.3em 18%;
     position: relative;
 }
 
@@ -152,16 +152,25 @@ li{
     border-top: 2px solid #f35b5b;
     margin-top: .3em;
     width: 100%;
+    justify-content: space-between;
 }
 
 .dropdown-separator{
     display: flex;
     flex-direction: column;
-    padding: 1em 0 .5em 13em;
+    padding: 1em 0 .5em 0;
 }
 
-.dropdown-separator--first{
-    padding-left: 18.5em;
+.dropdown-separator:nth-child(1){
+    margin-left: 18%;
+}
+
+.dropdown-img{
+    margin-right: 24%;
+}
+
+.dropdown-img--center{
+    margin: 1em calc(50% - 307.5px) 1em 0;
 }
 
 .dropdown-separator > li{

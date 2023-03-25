@@ -75,29 +75,34 @@ li{
     transform: translateX(calc(-13em));
 }
 
-.header-social{
+.social_img{
     display: block;
-    width: 1.2em;
-    height: 1.2em;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    margin: 0 .25em;
 }
 
-.header-social--vk{
-    background-image: url(../img/vkLogo.svg);
+.header-social:first-of-type{
     margin-left: 1em;
 }
 
-.header-social--yt{
+.header-social{
+    width: 24px;
+    height: 24px;
+    margin: 0 .25em;
+}
+
+.social--vk{
+    background-image: url(../img/vkLogo.svg);
+}
+
+.social--yt{
     background-image: url(../img/ytLogo.svg);
 
 }
 
-.header-social--ok{
+.social--ok{
     background-image: url(../img/okLogo.svg);
-
 }
 
 

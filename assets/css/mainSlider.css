@@ -88,6 +88,7 @@
     padding: .7em 2em;
     margin-top: 2em;
     transition: all .5s;
+    display: block;
 }
 
 .btn--yellow:hover{

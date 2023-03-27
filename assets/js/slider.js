@@ -29,6 +29,7 @@ $(document).ready(function () {
     preload(imgUrl);
 
     function changeSlide(index){
+        hSlide.add(slide).add(numSlide).stop(true, true); 
         slide.css('background-image', 'url(' + imgUrl[index] + ')');
         numSlide.fadeOut(function() {
             $(this).text((index + 1) + ' / ' + imgText.length)

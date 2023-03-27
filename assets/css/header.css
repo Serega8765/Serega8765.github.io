@@ -187,3 +187,31 @@ li{
     transition: all .5s;
 }
 /*White END*/
+
+/*Scrollbar*/
+
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #f7a4a4 #F35B5B;
+}
+
+*::-webkit-scrollbar{
+    width: 18px;
+}
+
+*::-webkit-scrollbar-track{
+    background: rgb(250, 199, 199);
+}
+
+*::-webkit-scrollbar-thumb{
+    background-color: #f7a4a4;
+    border-radius: 8px;
+    transition: all .5s;
+    border: 3px solid rgb(250, 199, 199);
+
+}
+
+*::-webkit-scrollbar-thumb:hover{
+    background-color: #F35B5B;
+
+}

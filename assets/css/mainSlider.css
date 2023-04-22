@@ -25,6 +25,13 @@
     left: calc(50% - 3em);
 }
 
+.slider-line{
+    position: absolute;
+    top: 1em;
+    left: calc(50% - 3em);
+    display: none;
+}
+
 .slide-arrow, .slide-numSlide{
     color: #fff;
 }
@@ -72,11 +79,18 @@
 
 .wrapper-h1{
     min-height: 130px;
+}
 
+.wrapper-h1--under_slide{
+    display: none;
 }
 
 .slider-h1{
     color: #fff !important;
+}
+
+.slider-wrapper_btn--under_slide{
+    display: none;
 }
 
 .btn--yellow{

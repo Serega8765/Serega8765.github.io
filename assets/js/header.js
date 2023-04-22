@@ -1,7 +1,11 @@
 $(document).ready(function () {
     var eyeless = $('.btn--eyeless'),
         eyelessContent = $('.eyeless-content'),
-        liMain = $('.nav-li--main');
+        liMain = $('.nav-li--main'),
+        btnBurger = $('.header-burger_btn'),
+        nav = $('.nav--main'),
+        navUl = $('.nav--main > ul'),
+        closeBurger = $('.close_menu');
 
     var isOpen = false;
 
@@ -15,6 +19,22 @@ $(document).ready(function () {
             eyelessContent.not(eyeless).removeClass('active-eyeless-content');
         }
     );
+
+    btnBurger.click(function (e) { 
+        nav.add(navUl).stop(true, true);
+        nav.fadeIn(200).css('display', 'flex');
+        $('.wrap-close_burger').fadeIn(300);
+        navUl.animate({width : '300px'}, 300).css('overflow', 'visible');
+        console.log('Open');
+    });
+
+    closeBurger.click(function (e) { 
+        nav.add(navUl).stop(true, true);
+        $('.wrap-close_burger').fadeOut(200);
+        navUl.animate({width : '0px'}, 300, function () {nav.fadeOut(200);}).css('overflow', 'visible');
+        console.log('Close');
+
+    });
 
     liMain.click(function(e){
         if(!isOpen){

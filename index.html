@@ -12,11 +12,14 @@
     <link rel="stylesheet" href="assets/css/mainSlider.css" />
     <link rel="stylesheet" href="assets/css/mainContent.css" />
     <link rel="stylesheet" href="assets/css/footer.css" />
+    <link rel="stylesheet" href="assets/css/adaptive.css" />
 
     <script src="./assets/js/jquery-3.6.1.js"></script>
+    <script src="./assets/js/jquery.touchSwipe.js"></script>
     <script src="./assets/js/header.js"></script>
     <script src="./assets/js/slider.js"></script>
     <script src="./assets/js/main-content.js"></script>
+    <script src="./assets/js/btnScrollbarUp.js"></script>
   </head>
   <body>
     <header class="header">
@@ -30,12 +33,19 @@
           <a class="header-social social_img social--vk" href="#"></a>
           <a class="header-social social_img social--yt" href="#"></a>
           <a class="header-social social_img social--ok" href="#"></a>
+          <div class="header-burger_btn"></div>
         </div>
         <div class="eyeless-content">Версия для слабовидящих</div>
       </section>
 
       <nav class="nav--main">
         <ul>
+          <div class="mobile-nav_head">
+            <div class="wrap-close_burger">
+              <img class="close_menu" src="./assets/img/closeBurger.svg" alt="">
+            </div>
+            <hr color="#8D8D8D";            >
+          </div>
           <li class="nav-li--main">
             <div class="nav-a--main" href="#">
               <span class="nav-span--main">
@@ -150,14 +160,31 @@
             <span class="slide-numSlide"> 1 / 4 </span>
             <span class="slide-arrow" id="slideRight">→</span>
           </div>
-          <div class="wrapper-h1">
+          <div class="slider-line">
+            <img class="slide-line"  id="slide1" src="assets/img/slider/sliderLineSelected.svg" alt="">
+            <img class="slide-line"  id="slide2" src="assets/img/slider/sliderLine.svg" alt="">
+            <img class="slide-line"  id="slide3" src="assets/img/slider/sliderLine.svg" alt="">
+            <img class="slide-line"  id="slide4" src="assets/img/slider/sliderLine.svg" alt="">
+          </div>
+          <div class="wrapper-h1 wrapper-h1--in_slide">
             <h1 class="h1 slider-h1">
-              Музейно-туристический <br/>
-              центр «Золотая Хохлома»
+              Музейно-туристический центр «Золотая Хохлома»
             </h1>
           </div>
-          <a href="#" class="btn--yellow">Виртуальный тур</a>
-          <a href="#" class="btn--yellow">Подробнее</a>
+          <div class="slider-wrapper_btn slider-wrapper_btn--in_slide">
+            <a href="#" class="btn--yellow btn-slider--yellow">Виртуальный тур</a>
+            <a href="#" class="btn--yellow btn-slider--yellow">Подробнее</a>  
+          </div>
+        </div>
+        <div class="wrapper-h1 wrapper-h1--under_slide">
+          <h1 class="h1 slider-h1">
+            Музейно-туристический <br/>
+            центр «Золотая Хохлома»
+          </h1>
+        </div>
+        <div class="slider-wrapper_btn slider-wrapper_btn--under_slide">
+          <a href="#" class="btn--yellow btn-slider--yellow">Виртуальный тур</a>
+          <a href="#" class="btn--yellow btn-slider--yellow">Подробнее</a>  
         </div>
       </section>
       <!-- Slider end -->
@@ -170,33 +197,36 @@
             <img class="content_card-redBerry--big content_card-redBerry--left" src="./assets/img/content/redBerry.svg" alt="" />
             <img  class="content_card-redBerry--left" src="./assets/img/content/redBerry.svg" alt="" />
         </div>
-        <div class="content-wrap_info">
+        <div class="content-wrap_pushkin">
             <div class="content_card-img">
                 <img class="content_card-card_img" src="./assets/img/content/pushkinCard.svg" alt="">
                 <img class="content_card-card_img" src="./assets/img/content/pushkinCard.svg" alt="">
                 <img class="content_card-card_img" src="./assets/img/content/pushkinCard.svg" alt="">
                 <img class="content_card-card_img" src="./assets/img/content/pushkinCard.svg" alt="">
+                <div class="content_card-wrap_stores wrap_stores--under_card">
+                  <a class="btn-store btn-store--apple" href="#"></a>
+                  <a class="btn-store btn-store--google" href="#"></a>
+                </div>
             </div>
             <div class="content_card-info_card">
-                <p class="content-p--head info-p--head">Как принять участие в программе?</p>
+                <h4 class="h4 info_card-h4">Как принять участие в программе?</h4>
                 <ol class="content_card-ol">
                     <li>Зарегистрироваться на портале «Госуслуги».</li>
                     <li>Подтвердить учётную запись.</li>
-                    <li>Установить мобильное приложение 
-                        «Госуслуги.Культура».</li>
+                    <li>Установить мобильное приложение «Госуслуги.Культура».</li>
                     <li>Получить Пушкинскую карту — виртуальную или пластиковую карту платёжной системы «Мир».</li>
                     <li>Выбрать мероприятие из афиши в приложении.</li>
                     <li>Купить билет в приложении, на сайте или в кассе музея.</li>
                 </ol>
-                <a class="btn--yellow info_card-btn" href="#">Купить билеты</a>
-                <div class="content_card-wrap_stores">
-                    <a class="btn-store btn-store--apple" href="#">
-                    <img src="./assets/img/content/appStore.svg" alt="">
-                </a>
-                <a class="btn-store btn-store--google" href="#">
-                    <img src="./assets/img/content/googlePlay.svg" alt="">
-                </a>
-                </div>
+            </div>
+            <a class="btn--yellow info_card-btn" href="#">Купить билеты</a>
+            <div class="content_card-wrap_stores">
+              <a class="btn-store btn-store--apple" href="#">
+                <img src="./assets/img/content/appStore.svg" alt="">
+              </a>
+              <a class="btn-store btn-store--google" href="#">
+                <img src="./assets/img/content/googlePlay.svg" alt="">
+              </a>
             </div>
         </div>
       </section>
@@ -210,13 +240,14 @@
         </div>
         <div class="afisha-wrap_content">
           <div class="afisha-text">
-            <p class="content-p--head content-p--afisha">Широкая масленица в Семёнове</p>
-            <div class="content-p--text">
-              <p>Масленичная неделя — прекрасный повод не просто испечь блины, но и побывать на весёлых гуляниях проводов зимы в музеях города Семёнова.</p>
-              <p>МБУК «Историко-художественный музей» приглашает на «купеческую масленицу на Сластенинской». Масленица — старый русский праздник, который любили отмечать все независимо от статуса. А вы за столом у купцов угощались? Пробовали блинчики из нескольких сортов муки? Если нет, тогда ждём вас на увлекательную программу «Купеческая масленица на Сластенинской»</p>
+            <h4 class="h4">Широкая масленица в Семёнове</h4>
+            <div class="afisha-content--text">
+              <p>Масленичная неделя — прекрасный повод не просто испечь блины, но и побывать на весёлых гуляниях проводов зимы в музеях города Семёнова.
+              </p>
+              <p>МБУК «Историко-художественный музей» приглашает на «купеческую масленицу на Сластенинской». Масленица — старый русский праздник, который любили отмечать все независимо от статуса. А вы за столом у купцов угощались? Пробовали блинчики из нескольких сортов муки? Если нет, тогда ждём вас на увлекательную программу «Купеческая масленица на Сластенинской». Вас встретит хозяйка семеновской чайной Сметанина угостит блинком с припёком да душистым чаем. Распотешит рассказами, шутками и да прибаутками. Конкурсы и игры, танцы, песни, весёлые потешки помогут со всеми почестями проводить холодную зиму.</p>
             </div>
-              <a href="#" class="btn--yellow afisha-text-btn">Подробнее</a>
           </div>
+          <a href="#" class="btn--yellow afisha-btn">Подробнее</a>
           <div class="afisha-img">
             <img src="./assets/img/afisha.svg" alt="">
           </div>
@@ -227,26 +258,32 @@
       <section class="content-news">
         <div class="content-h2_wrap content-h2_wrap--green">
           <h2 class="h2 content-h2">Новости</h2>
+          <div class="news-line_wrap">
+            <img class="news-line"  id="newsLine1" src="assets/img/slider/sliderLineSelected.svg" alt="">
+            <img class="news-line"  id="newsLine2" src="assets/img/slider/sliderLine.svg" alt="">
+            <img class="news-line"  id="newsLine3" src="assets/img/slider/sliderLine.svg" alt="">
+            <img class="news-line"  id="newsLine4" src="assets/img/slider/sliderLine.svg" alt="">
+          </div>
         </div>
         <div class="news-short_news">
-          <article class="short_news-block">
+          <article class="short_news-block" id="news1">
             <img src="./assets/img/content/news1.svg" alt="">
-            <p class="content-p--head">Топорщина — грубая и неумелая работа…</p>
+            <p class="content-p--head">1Топорщина — грубая и неумелая работа…</p>
             <p class="content-p--text">Но в городе Семёнове вам докажут обратное. В десятке километров от Семёнова расположена деревня Федосеево. Здесь, по рассказам старожилов, мастер Яков Александрович Александров однажды смастерил забавную игрушку, она была сколочена из щепочек и дощечек и была подвижной.</p>
           </article>
-          <article class="short_news-block">
+          <article class="short_news-block" id="news2">
             <img src="./assets/img/content/news1.svg" alt="">
-            <p class="content-p--head">Топорщина — грубая и неумелая работа…</p>
+            <p class="content-p--head">2Топорщина — грубая и неумелая работа…</p>
             <p class="content-p--text">Но в городе Семёнове вам докажут обратное. В десятке километров от Семёнова расположена деревня Федосеево. Здесь, по рассказам старожилов, мастер Яков Александрович Александров однажды смастерил забавную игрушку, она была сколочена из щепочек и дощечек и была подвижной.</p>
           </article>
-          <article class="short_news-block">
+          <article class="short_news-block" id="news3">
             <img src="./assets/img/content/news1.svg" alt="">
-            <p class="content-p--head">Топорщина — грубая и неумелая работа…</p>
+            <p class="content-p--head">3Топорщина — грубая и неумелая работа…</p>
             <p class="content-p--text">Но в городе Семёнове вам докажут обратное. В десятке километров от Семёнова расположена деревня Федосеево. Здесь, по рассказам старожилов, мастер Яков Александрович Александров однажды смастерил забавную игрушку, она была сколочена из щепочек и дощечек и была подвижной.</p>
           </article>
-          <article class="short_news-block">
+          <article class="short_news-block" id="news4">
             <img src="./assets/img/content/news1.svg" alt="">
-            <p class="content-p--head">Топорщина — грубая и неумелая работа…</p>
+            <p class="content-p--head">4Топорщина — грубая и неумелая работа…</p>
             <p class="content-p--text">Но в городе Семёнове вам докажут обратное. В десятке километров от Семёнова расположена деревня Федосеево. Здесь, по рассказам старожилов, мастер Яков Александрович Александров однажды смастерил забавную игрушку, она была сколочена из щепочек и дощечек и была подвижной.</p>
           </article>
         </div>
@@ -255,35 +292,33 @@
       <!-- Short news end -->
     </main>
     <footer class="footer">
-      <div class="footer-information">
-        <div class="footer_information-contucts">
-          <h3 class="h3">Мы всегда на связи</h3>
-          <p>
-            <img class="img-marker" src="./assets/img/phone.svg" alt="">
-            +7 920 252-72-00
-          </p>
-          <p>
-            <img class="img-marker" src="./assets/img/phone.svg" alt="">
-            +7 831 625-61-41
-          </p>
-          <a class="contucts-a" href="#">
-            <img class="img-marker" src="./assets/img/mail.svg" alt="">
-            semenmuseum@mail.ru
-          </a>
-          <p>
-            <img class="img-marker" src="./assets/img/geoMark.svg" alt="">
-            г. Семёнов ул. Чкалова, д. 18
-          </p>
-          <h3 class="h3 contucts_foot-h3">Социальные сети</h3>
-          <div class="information_foot-wrap_social">
-            <a class="footer-social social_img social--vk" href="#"></a>
-            <a class="footer-social social_img social--yt" href="#"></a>
-            <a class="footer-social social_img social--ok" href="#"></a>
-          </div> 
-        </div>
-        <div footer_information-map>
-          <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6226b0d83cb2c6a0fa51ce5c1c2eaf73b1d9f81d48d9bf1249123aa8a46b9bf9&amp;width=100%&amp;height=330&amp;lang=ru_RU&amp;scroll=true"></script>
-        </div>
+      <div class="footer_information-contucts">
+        <h3 class="h3">Мы всегда на связи</h3>
+        <p>
+          <img class="img-marker" src="./assets/img/phone.svg" alt="">
+          +7 920 252-72-00
+        </p>
+        <p>
+          <img class="img-marker" src="./assets/img/phone.svg" alt="">
+          +7 831 625-61-41
+        </p>
+        <a class="contucts-a" href="#">
+          <img class="img-marker" src="./assets/img/mail.svg" alt="">
+          semenmuseum@mail.ru
+        </a>
+        <p>
+          <img class="img-marker" src="./assets/img/geoMark.svg" alt="">
+          г. Семёнов ул. Чкалова, д. 18
+        </p>
+        <h3 class="h3 contucts_foot-h3">Социальные сети</h3>
+        <div class="information_foot-wrap_social">
+          <a class="footer-social social_img social--vk" href="#"></a>
+          <a class="footer-social social_img social--yt" href="#"></a>
+          <a class="footer-social social_img social--ok" href="#"></a>
+        </div> 
+      </div>
+      <div class="footer_information-map">
+        <script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3A6226b0d83cb2c6a0fa51ce5c1c2eaf73b1d9f81d48d9bf1249123aa8a46b9bf9&amp;width=100%&amp;height=330&amp;lang=ru_RU&amp;scroll=true"></script>
       </div>
       <div class="footer-bunners">
         <a class="bunner-a bunner--cultureRF" href="#"></a>

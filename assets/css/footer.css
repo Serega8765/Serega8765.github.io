@@ -2,6 +2,10 @@
   background-color: #1E1A1A;
   padding-top: 3.5em;
   margin-top: 4em;
+  display: grid;
+  grid-template-areas: "contucts map"
+                       "bunners bunners"
+                       "underline underline";
 }
 
 .h3{
@@ -9,19 +13,20 @@
   color: #fff;
 }
 
-.footer-information{
-  display: flex;
-  flex-direction: row;
-  padding: 0 18%;
-}
-
-.footer-information > div{
-  width: 100%;
-}
-
 .footer_information-contucts > p{
   color: #8D8D8D;
   margin: .6em 0;
+}
+
+.footer_information-contucts{
+  grid-area: contucts;
+  padding-left: 36%;
+}
+
+.footer_information-map{
+  grid-area: map;
+  padding-right: 36%;
+
 }
 
 .contucts-a{
@@ -30,6 +35,7 @@
 
 .information_foot-wrap_social{
   display: flex;
+  align-items: center;
 }
 
 .footer-social{
@@ -62,6 +68,7 @@
   align-items: center;
   margin: 5em 0 2.5em 0;
   padding: 0 18%;
+  grid-area: bunners;
 }
 
 .bunner--cultureRF{
@@ -91,6 +98,7 @@
   justify-content: center;
   padding: 2.5em 0;
   border-top: 2px solid rgb(55%, 55%, 55%, .2);
+  grid-area: underline;
 }
 
 .bunner-a:hover{

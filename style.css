@@ -4,10 +4,10 @@
 	font-style: normal;
 	font-weight: normal;
 	src: local('Jost'),
-		url('./assets/fonts/Jost.woff2') format('woff2'), 
-		url('./assets/fonts/Jost.woff') format('woff'),
-		url('./assets/fonts/Jost.ttf') format('ttf'),
-		url('./assets/fonts/Jost.eot') format('eot');
+		url('./assets/fonts/jost/Jost.woff2') format('woff2'), 
+		url('./assets/fonts/jost/Jost.woff') format('woff'),
+		url('./assets/fonts/jost/Jost.ttf') format('ttf'),
+		url('./assets/fonts/jost/Jost.eot') format('eot');
 }
 
 /* Жирный */
@@ -16,10 +16,10 @@
 	font-style: normal;
 	font-weight: bold;
 	src: local('Jost'),
-		url('./assets/fonts/Jost.woff2') format('woff2'), 
-		url('./assets/fonts/Jost.woff') format('woff'),
-		url('./assets/fonts/Jost.ttf') format('ttf'),
-		url('./assets/fonts/Jost.eot') format('eot');
+		url('./assets/fonts/jost/Jost.woff2') format('woff2'), 
+		url('./assets/fonts/jost/Jost.woff') format('woff'),
+		url('./assets/fonts/jost/Jost.ttf') format('ttf'),
+		url('./assets/fonts/jost/Jost.eot') format('eot');
 }
 
 @font-face {
@@ -27,9 +27,49 @@
 	font-style: normal;
 	font-weight: normal;
 	src: local('Roboto Slab'),
-		url('./assets/fonts/Roboto-Slab.woff2') format('woff2'), 
-		url('./assets/fonts/Roboto-Slab.woff') format('woff'),
-		url('./assets/fonts/Roboto-Slab.ttf') format('ttf'),
-		url('./assets/fonts/Roboto-Slab.eot') format('eot');
+		url('./assets/fonts/roboto-slab/Roboto-Slab.woff2') format('woff2'), 
+		url('./assets/fonts/roboto-slab/Roboto-Slab.woff') format('woff'),
+		url('./assets/fonts/roboto-slab/Roboto-Slab.ttf') format('ttf'),
+		url('./assets/fonts/roboto-slab/Roboto-Slab.eot') format('eot');
 }
 
+@font-face {
+	font-family: 'Raleway';
+	font-style: normal;
+	font-weight: normal;
+	src: local('Raleway'),
+		url('./assets/fonts/raleway/Raleway.woff2') format('woff2'), 
+		url('./assets/fonts/raleway/Raleway.woff') format('woff'),
+		url('./assets/fonts/raleway/Raleway.ttf') format('ttf'),
+		url('./assets/fonts/raleway/Raleway.eot') format('eot');
+}
+
+.button_scrollbar_up{
+	display: flex;
+	padding: 0;
+	position: sticky;
+	bottom: 20px;
+	left: calc(100% - 80px);
+	width: 50px;
+	height: 50px;
+	font: 700 100px Jost;
+	color: #fff;
+	border: 4px solid #FFD15C;
+	background-color: #fff;
+	border-radius: 50%;
+	cursor: pointer;
+	z-index: 5;
+	justify-content: center;
+	align-items: center;
+	transition: all .5s;
+}
+
+.button_scrollbar_up > img{
+	width: 22px;
+	height: 22px;
+	transition: all .5s;
+}
+
+.button_scrollbar_up:hover{
+	border: 4px solid #F35B5B;
+}

@@ -1,0 +1,30 @@
+.wrap{
+  display: grid;
+  grid-template-areas: "aa aa aa"
+                       "bb cc cc"
+                       "dd dd .";
+}
+
+wrap > div{
+  padding: 20px;
+}
+
+.aa{
+  background-color: blue;
+  grid-area: aa;
+}
+
+.bb{
+  background-color: burlywood;
+  grid-area: bb;
+}
+
+.cc{
+  background-color: blueviolet;
+  grid-area: cc;
+}
+
+.dd{
+  background-color: chartreuse;
+  grid-area: dd;
+}
